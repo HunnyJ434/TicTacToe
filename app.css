@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151b29;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.scoreBoard{
+    font-size: 1em;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 15%;
+    background-color: rgb(214, 198, 202);
+    border: 1px solid rgb(245, 239, 239);
+    justify-content: space-around;
+}
+
+#p1Score,#p2Score,#tie{
+    color:#151b29;
+    display: block;
+    text-align: center;
+}
+
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.winnerClass{
+    transform: translateY(-0.08em);
+    transform: scale(1.1);
+    color: green;
+}
+
+
+.box{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 100px;
+    width: 30%;
+    height: 33.3%;
+    border: none;
+    transition: all 0.25s;
+}
+
+.btn{
+    display: flex;
+
+}
+
+.box:active{
+    transform: translateY(-0.25em);
+    color:  #4153b6;
+}
+
+.box:nth-of-type(2){
+    border: 4px solid rgb(242, 242, 248);
+    border-top:none;
+    border-bottom: none;
+}
+
+.box:nth-of-type(4){
+    border: 4px solid rgb(242, 242, 248);
+    border-left: none;
+    border-right: none;
+}
+
+.box:nth-of-type(5){
+    border: 4px solid rgb(242, 242, 248);
+}
+
+.box:nth-of-type(6){
+    border: 4px solid rgb(242, 242, 248);
+    border-left: none;
+    border-right: none;
+}
+
+.box:nth-of-type(8){
+    border: 4px solid rgb(242, 242, 248);
+    border-top: none;
+    border-bottom: none;
+}
+
+
+#nextRoundBtn,.Computer{
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+    background: none;
+    color: #ffa260;
+    border: 1px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+.Computer:hover{
+    border-color: #f1ff5c;
+    box-shadow: 0em 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+#nextRoundBtn:hover{
+    border-color: #f1ff5c;
+    box-shadow: 0em 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+
